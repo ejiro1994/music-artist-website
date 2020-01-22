@@ -59,14 +59,14 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav ul a {
     display: block;
     /* background: var(--main-bg-color); */
     color: var(--text-color);
-    margin: 0 2rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -99,6 +99,12 @@ main {
     height: 100%;
 }
 
+li {
+    padding: 0 0.5rem;
+    /* display: flex;
+    flex: 1; */
+}
+
 .banner {
     display: flex;
     flex: 1;
@@ -120,6 +126,14 @@ main {
     flex: 3;
     display: flex;
     align-items: center
+}
+
+@media only screen and (max-width: 760px) {
+    .nav-center {
+        
+       /* background:red;  */
+        flex: 10;
+    }
 }
 
 .nav-right {
